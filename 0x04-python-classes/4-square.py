@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+"""Square Class
+This is a square
+"""
+
+
 class Square:
+    """Summary of class here.    """
     def __init__(self, size=0):
+        """Inits SampleClass with blah."""
         self.__size = size
 
     @property
@@ -8,12 +15,13 @@ class Square:
         return self.__size
 
     @size.setter
-    def size(self, value):
-        if not isinstance(value, int):
+    def size(self, size):
+        if type(size) is not int:
             raise TypeError("size must be an integer")
-        if value < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
-        self.__size = value
+        self.__size = size
 
     def area(self):
-        return int(self.__size) ** 2
+        """does a thing"""
+        return self.__size ** 2
