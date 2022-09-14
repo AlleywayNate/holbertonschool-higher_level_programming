@@ -33,3 +33,28 @@ class Rectangle():
             self.__width = value
         else:
             raise TypeError("width must be an integer")
+
+    def area(self):
+        return self.__height * self.__width
+
+    def perimeter(self):
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        else:
+            return (self.__height * 2) + (self.__width * 2)
+
+    def __str__(self):
+        string = ""
+        if self.__height == 0 or self.__width == 0:
+            return string
+        for i in range(self.__height):
+            if i == self.__height - 1:
+                string += ('#' * self.__width)
+            else:
+                string += (('#' * self.__width) + '\n')
+        return string
+
+    def __repr__(self):
+        w = str(eval('self.width'))
+        h = str(eval('self.height'))
+        return 'Rectangle(' + w + ', ' + h + ')'
