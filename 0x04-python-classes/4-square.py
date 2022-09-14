@@ -25,3 +25,12 @@ class Square:
     def area(self):
         """does a thing"""
         return self.__size ** 2
+
+    def my_print(self):
+        if self.__size == 0:
+            print()
+            return None
+        for i in range(1, self.area() + 1):
+            print('#', end='')
+            if i % self.__size == 0 and i > 0:
+                print()
