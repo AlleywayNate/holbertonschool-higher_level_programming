@@ -1,7 +1,16 @@
 #!/usr/bin/python3
-"""Defines a class Squar"""
+"""Square Class
+This is a square
+"""
+
+
 class Square:
-        
-        def __init__(self, size):
-                """Inits SampleClass with blah."""
-                self.__size = size
+    """Summary of class here.
+    Longer class information...
+    Longer class information...
+    Attributes:
+        size: A boolean indicating if we like SPAM or not.
+    """
+    def __init__(self, size):
+        """Inits SampleClass with blah."""
+        self.__size = size
