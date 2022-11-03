@@ -2,16 +2,31 @@
     "sqltools.connections": [
         {
             "mysqlOptions": {
-                "authProtocol": "default"
+                "authProtocol": "xprotocol"
+            },
+            "previewLimit": 99999,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "mysql",
+            "database": "mysql",
+            "username": "root",
+            "password": "1234",
+            "connectionTimeout": 99999
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol"
             },
             "previewLimit": 50,
             "server": "localhost",
-            "port": 3306,
+            "port": 33060,
             "driver": "MySQL",
-            "name": "holbertonsql",
-            "database": "airbnb",
-            "username": "1234",
-            "password": "1234"
+            "database": "mysql",
+            "username": "root",
+            "name": "MySQLdb",
+            "password": "1234",
+            "connectionTimeout": 15
         }
     ]
 }
