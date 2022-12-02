@@ -1,5 +1,4 @@
 # PROJECT: 0x01. JavaScript - Objects, Scopes and Closures
-### AUTHOR: Matthew Allen
 
 ## TASKS:
 ### 0. Rectangle #0 - `0-rectangle.js`
